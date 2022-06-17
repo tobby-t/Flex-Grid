@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+nav{
+  font-size: large;
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+
+}
+nav a{
+  text-decoration: none;
+  color: rgb(134, 36, 129);
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.container h2 {
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+.container img {
+  height: 27px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 25px;
+  height: 320px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 100%;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 25px;
+  height: 320px;
+  width: 100%;
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 25px;
+  height: 320px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 100%;
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 20px;
+  padding: 9px;
+  width: 60%;
+  margin-top: 20%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+.suvs button:hover,
+.suvs button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: 1px solid white;
+}
+.sedans button:hover,
+.sedans button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 1px solid white;
+}
+.luxury button:hover,
+.luxury button :active {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border: 1px solid white;
+}
+/* 375
+1440 */
+
+
+@media (max-width: 1075px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 10%;
+  }
+  }
